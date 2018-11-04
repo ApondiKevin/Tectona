@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #F1F9FF;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.2em;  
+}
+  
+/* -- SITE NAVIGATION --- */
+.sidebar-navigation {
+    /* display: inline-block; */
+    min-height: 100vh;
+    width: 4%;
+    background-color: #02A687;
+    float: left;
+}
+.sidebar-navigation ul {
+    text-align: center;
+    color: white;
+}
+.sidebar-navigation a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar-navigation ul li {
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all ease-out 120ms;
+}
+.sidebar-navigation ul li i { /* TODO: Correnct ul li i*/
+    display: block;
+    font-size: 24px;
+    transition: all ease 450ms;
+}
+.sidebar-navigation ul li .tooltip {
+    display: inline-block;
+    position: absolute;
+    background-color: #CE7953;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: -26px;
+    left: 90px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+.sidebar-navigation ul li .tooltip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+}
+.sidebar-navigation ul li:hover {
+    background-color: #02324C;
+}
+.sidebar-navigation ul li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.sidebar-navigation ul li.active {
+    background-color: #02324C;
+}
+
+/* -- SITE CONTENT --- */
+.content {
+    background-color: #02A687;
+    height: 100vh;
+    color: white;
+    background-image: url('../images/fabric-dark.png');
+    background-repeat: repeat;
+    background-position: center;
+}
+.landing {
+    position: relative;
+    top: 20%;
+    display: table;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+.landing a {
+    display: block;
+    color: #ffffff;
+}
+.landing img {
+    height: 150px;
+}
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #CE7953;
+    border: 2px solid #CE7953;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.0em 2.0em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button:hover {
+    border: 2px solid #ffffff;
+    background-color: #02324C;
+}
+.landing button {
+    margin: 28px 0;
+}
+
+.info-content {
+    width: 96%;
+    float: right;
+    height: 35vh;
+}
+.page-header {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background: #02324C;
+    color: white;
+    height: 100%;
+    padding: 0;
+    background-image: url('../images/fabric-dark.png');
+    background-repeat: repeat;
+    background-position: center;
+
+}
+.page-content {
+    margin: 0 auto;
+    text-align: center;
+    height: 65vh;
+    margin-top: 80px;
+}
+.intro-text {
+    position: relative;
+    top: 30%;
+    display: table;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.title {
+    font-size: 24px;
+    color: #02324C;
+}
+.interest {
+    font-weight: bold;
+    padding-top: 20px;
+    color: #CE7953;
+}
+.columns {
+    column-count: 2;
+    column-gap: 10px;
+    max-width: 900px;
+}
+.columns img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 70%;
+}
+.columns p {
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: left;
+}
+.geo-link {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    color: #CE7953;
+    text-decoration: none;
+    font-weight: bold;
+}
+.geo-link:hover {
+    color: #02324C;
+    text-decoration: underline;
+}
