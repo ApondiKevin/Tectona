@@ -101,19 +101,18 @@ h4 {
 }
 .details-nav li {
     padding: 5px 10px;
-}
-.details-nav a {
     text-decoration: none;
     color: #ffffff;
     font-size: 0.8em;
     font-weight: bold;
+    cursor: pointer;
 }
-.details-nav a:hover {
+.details-nav li:hover {
     text-decoration: none;
     color: #CE7953;
     font-size: 0.8em;
 }
-.details-nav a:active {
+.details-nav li.active {
     text-decoration: underline;
     color: #CE7953;
     font-size: 0.8em;
@@ -247,4 +246,13 @@ button:hover {
 .geo-link:hover {
     color: #02324C;
     text-decoration: underline;
+}
+
+/* --THE MAP-- */
+#map {
+    position: absolute;
+    height: 100%;
+    left: 19%;
+    width: 100%;
+    background-color: #F1F9FF;
 }

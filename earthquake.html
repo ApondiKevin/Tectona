@@ -46,40 +46,45 @@
         <div class="details-nav">
             <h2>Earthquake Feeds</h2>
             <nav class="sub-nav">
-                <ul>
+                <ul id="hour">
                     <h3>Past Hour</h3>
-                    <a href="#"><li>Significant Earthquakes</li></a>
-                    <a href="#"><li>M4.5+ Earthquakes</li></a>
-                    <a href="#"><li>M2.5+ Earthquakes</li></a>
-                    <a href="#"><li>M1.0+ Earthquakes</li></a>
-                    <a href="#"><li>All Earthquakes</li></a>
+                    <li class="significant">Significant Earthquakes</li>
+                    <li class="4.5">M4.5+ Earthquakes</li>
+                    <li class="2.5">M2.5+ Earthquakes</li>
+                    <li class="1.0">M1.0+ Earthquakes</li>
+                    <li class="all">All Earthquakes</li>
                 </ul>
-                <ul>
+                <ul id="day">
                     <h3>Past Day</h3>
-                    <a href="#"><li>Significant Earthquakes</li></a>
-                    <a href="#"><li>M4.5+ Earthquakes</li></a>
-                    <a href="#"><li>M2.5+ Earthquakes</li></a>
-                    <a href="#"><li>M1.0+ Earthquakes</li></a>
-                    <a href="#"><li>All Earthquakes</li></a>
+                    <li class="significant">Significant Earthquakes</li>
+                    <li class="4.5">M4.5+ Earthquakes</li>
+                    <li class="2.5">M2.5+ Earthquakes</li>
+                    <li class="1.0">M1.0+ Earthquakes</li>
+                    <li class="all">All Earthquakes</li>
                 </ul>
-                <ul>
+                <ul id="week">
                     <h3>Past 7 Days</h3>
-                    <a href="#"><li>Significant Earthquakes</li></a>
-                    <a href="#"><li>M4.5+ Earthquakes</li></a>
-                    <a href="#"><li>M2.5+ Earthquakes</li></a>
-                    <a href="#"><li>M1.0+ Earthquakes</li></a>
-                    <a href="#"><li>All Earthquakes</li></a>
+                    <li class="significant">Significant Earthquakes</li>
+                    <li class="4.5">M4.5+ Earthquakes</li>
+                    <li class="2.5">M2.5+ Earthquakes</li>
+                    <li class="1.0">M1.0+ Earthquakes</li>
+                    <li class="all">All Earthquakes</li>
                 </ul>
-                <ul>
+                <ul id="month">
                     <h3>Past 30 Days</h3>
-                    <a href="#"><li>Significant Earthquakes</li></a>
-                    <a href="#"><li>M4.5+ Earthquakes</li></a>
-                    <a href="#"><li>M2.5+ Earthquakes</li></a>
-                    <a href="#"><li>M1.0+ Earthquakes</li></a>
-                    <a href="#"><li>All Earthquakes</li></a>
+                    <li class="significant">Significant Earthquakes</li>
+                    <li class="4.5">M4.5+ Earthquakes</li>
+                    <li class="2.5">M2.5+ Earthquakes</li>
+                    <li class="1.0">M1.0+ Earthquakes</li>
+                    <li class="all">All Earthquakes</li>
                 </ul>
             </nav>
         </div>        
     </div>
+    <div id="map"></div>
+
+    <script src="js/earthquake.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvWSeWu-g_uQ7TpQBZFspA0KaTnMmdCg&callback=initMap">
+    </script>
 </body>
 </html>
