@@ -43,10 +43,40 @@
     </nav>  
 
     <div class="info-content">
-        <div class="details-nav">
-            <h2>Weather Mapping</h2>
-            
-        </div>        
+        <div class="page-header">
+            <div id="weather-intro" class="intro-text">
+                <h1>Weather Info</h1>
+                <div class="weather-container lat-lng">
+                    <input id="lat" type="text" class="weather input" placeholder="Latitude">
+                    <input id="lng" type="text" class="weather input" placeholder="Longitude">
+                    <button id="btn-search">Search</button>
+                </div>
+                <p>OR</p>
+                <div class="weather-container location">
+                    <input id="loc" type="text" class="weather input" placeholder="Location">
+                    <button id="btn-search">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-content info-weather">
+            <div class="weather-horizontal">
+                <div class="weather-media">
+                    <img src="http://placehold.it/150x200/DC143C/FFFFFF" alt="img">
+                </div>
+                <div class="weather-content">
+                    <div class="weather-data">
+                        <div class="weather-title">
+                            <h2 class="weather-title-text">Welcome</h2>
+                        </div>
+                        <div class="weather-supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="js/weather.js"></script>
 </body>
 </html>

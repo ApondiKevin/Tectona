@@ -210,6 +210,12 @@ button:hover {
     display: inline-block;
     margin-left: 10px;
 }
+.card img {
+    filter: grayscale();
+}
+.card:hover img:hover{
+    filter: grayscale(0);
+}
 .weather-card {
     width: 200px;
     display: flex;
@@ -267,4 +273,56 @@ button:hover {
     left: 19%;
     width: 100%;
     background-color: #F1F9FF;
+}
+.weather-container {
+    padding: 10px 0;
+}
+.input {
+    flex: 1 0 auto;
+    border: none;
+    color: #CE7953;
+    font-weight: bold;
+    outline: none;
+    height: 100%;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    margin: 5px 5px 5px 0px;
+} 
+.input::placeholder {
+    color: #02324C;
+}
+#btn-search {
+    padding: .5rem 2rem;
+}
+#weather-intro {
+    position: relative;
+    top: 10%;
+    display: table;
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}  
+.weather-horizontal {
+    flex-direction: column;
+    height: 250px;
+    width: 50%;
+    background: #ffffff;
+    padding: 0;
+    box-shadow: 0px 2px 5px 0px rgba(85,85,85,1);
+    margin: auto;
+}
+.weather-content {
+    width: 100%;
+    background-color: #ffffff;
+}
+.weather-media {
+    width: 30%;
+    background-color: black;
+    float: left;
+    height: 100%;
+}
+.weather-data {
+    position: relative;
+    text-align: left;
+    padding: 10px 10px;
 }
