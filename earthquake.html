@@ -78,12 +78,20 @@
                     <li class="1.0">M1.0+ Earthquakes</li>
                     <li class="all">All Earthquakes</li>
                 </ul>
-            </nav>
+                <!-- <div class="weather-card">
+                    <div id="weatherImage"></div>
+                    <div id="weatherInfo"></div>
+                    <div id="wind_dir"></div>
+                </div> -->
+            </nav>            
         </div>        
     </div>
     <div id="map"></div>
 
     <script src="js/earthquake.js"></script>
+    <!-- Need the following code for clustering Google maps markers-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvWSeWu-g_uQ7TpQBZFspA0KaTnMmdCg&callback=initMap">
     </script>
 </body>
