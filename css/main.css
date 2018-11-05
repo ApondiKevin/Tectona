@@ -14,7 +14,13 @@ body {
 h2 {
     font-size: 1.2em;  
 }
-  
+h3 {
+    font-size: 1em;
+}
+h4 {
+    font-size: 0.8em;
+}
+
 /* -- SITE NAVIGATION --- */
 .sidebar-navigation {
     /* display: inline-block; */
@@ -75,6 +81,42 @@ h2 {
 }
 .sidebar-navigation ul li.active {
     background-color: #02324C;
+}
+
+.details-nav {
+    min-height: 100vh;
+    width: 15%;
+    background-color: #02324C;
+    float: left;
+    color: #ffffff;
+    padding: 10px;
+}
+.details-nav ul {
+    padding: 10px 0;
+}
+.details-nav h3 {
+    color: #CE7953;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.details-nav li {
+    padding: 5px 10px;
+}
+.details-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.details-nav a:hover {
+    text-decoration: none;
+    color: #CE7953;
+    font-size: 0.8em;
+}
+.details-nav a:active {
+    text-decoration: underline;
+    color: #CE7953;
+    font-size: 0.8em;
 }
 
 /* -- SITE CONTENT --- */
