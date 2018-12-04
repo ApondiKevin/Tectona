@@ -15,7 +15,7 @@
 <body>
     <nav class="sidebar-navigation">
         <ul>
-            <a href="index.html"><li class="active">
+            <a href="index.html"><li>
                 <h2 style="font-weight: bold; font-size:32px;">T</h2>
                 <span class="tooltip">Home</span>
             </li></a>
@@ -35,21 +35,22 @@
                 <i class="fa fa-cloud"></i>
                 <span class="tooltip">Weather Mapping</span>
             </li></a>
-            <a href="airports.html"><li>
+            <a href="#"><li class="active">
                 <i class="fa fa-globe"></i>
                 <span class="tooltip">Airports</span>
             </li></a>
         </ul>
-    </nav>   
+    </nav>  
 
-    <div class="content">
-        <div class="landing">
-            <img src="images/logo.png" alt="Tectona">
-            <h1>Instant, Beautiful, Geographical Data</h1>
-            <h2>Tectona serves to showcase Earthquakes, Weather and Other GeoJSON data in a simple and attractive way</h2>
-            <a href="geoJSON.html"><button>About GeoJSON</button></a>
-            <a href="docs/Integrated Project 2 Specification August 2018 V1.0.pdf">View Specification PDF</a>
+    <div class="info-content">
+            <div id="airports_map"></div>
         </div>
-    </div>
+
+    <script src="js/airports.js"></script>
+    <!-- Need the following code for clustering Google maps markers-->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvWSeWu-g_uQ7TpQBZFspA0KaTnMmdCg&callback=initMap">
+    </script>
 </body>
 </html>
